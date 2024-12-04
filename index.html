@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Video Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad-Free Video</title>
   <style>
+    /* Style for fullscreen visible video */
     html, body {
       height: 100%;
       margin: 0;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -16,14 +17,15 @@
     iframe {
       width: 100vw;
       height: 100vh;
-      max-width: 100%;
-      max-height: 100%;
       border: none;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://www.youtube-nocookie.com/embed/xvFZjo5PgG0?autoplay=1&rel=0&controls=1" 
-          allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe 
+    src="https://www.youtube-nocookie.com/embed/xvFZjo5PgG0?autoplay=1&rel=0&controls=1" 
+    allow="autoplay; encrypted-media; fullscreen" 
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
